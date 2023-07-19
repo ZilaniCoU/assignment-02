@@ -391,7 +391,9 @@ nav {
     font-weight: 600;
 }
 .category:hover {
-    border: 1px solid #FF42A5;
+    border: 1px solid #FF42A5;    
+}
+.category:hover p {
     color:#FF42A5;
 }
 /* *********************************************************** */
