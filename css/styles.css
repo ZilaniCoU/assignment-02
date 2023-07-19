@@ -193,15 +193,59 @@ nav {
 .funny-video-card {
     width: 25%;
 }
-.funny-video-card > img {
+
+.funny-video-card  img {
     width: 100%;
     object-fit: cover;
 }
-.funny-video-card > p {
+.funny-video-card  p {
+    padding-left: 5px;
     text-align: left;
 }
-.funny-video-card > img:hover {
-
+/* this section is done by the help chatgpt */
+.card {
+    position: relative;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: border-color 0.3s ease;
+}
+.card:hover {
+    border: 5px solid #F948B2;
+    border-radius: 10px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+.card:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    border: 2x solid #F948B2;
+    border-radius: 10px;
+}
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FF42A5;
+    font-size: 1.5rem;
+}
+.watch {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -20%);
+    color: #FF42A5;
+    font-size: 1.1rem;
 }
 
 /* play instant part */
@@ -235,7 +279,6 @@ nav {
     height: 100%;
     object-fit: cover;
 }
-
 .position {
     position: absolute;
     left: -25%;
@@ -385,6 +428,7 @@ footer {
 .copyright {
     margin: 20px auto;
 }
+/* *********************************************************** */
 
 
 /* ********************************************************** */
