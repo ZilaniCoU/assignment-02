@@ -224,17 +224,14 @@ nav {
 
 .funny-video-card-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .funny-video-card {
     width: 25%;
-}
-
-.funny-video-card img {
-    width: 100%;
-    object-fit: cover;
 }
 
 .funny-video-card p {
@@ -247,13 +244,15 @@ nav {
     position: relative;
     display: inline-block;
     border: 1px solid transparent;
-    border-radius: 2px;
+    border-radius: 5px;
     transition: border-color 0.3s ease;
 }
-
+.card img {
+    width: 100%;
+}
 .card:hover {
     border: 5px solid #F948B2;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .overlay {
@@ -280,7 +279,7 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FF42A5;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .watch-now {
@@ -288,7 +287,7 @@ nav {
     bottom: 10px;
     left: 50%;
     top: 60%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -10%);
     color: #FF42A5;
     font-size: 1.1rem;
 }
