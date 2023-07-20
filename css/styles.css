@@ -353,6 +353,7 @@ nav {
     background: #FFF;
     color: #F948B2;
     font-weight: 600;
+    margin: 10px auto;
     padding: 15px 30px;
     border: none;
     display: block;
@@ -374,7 +375,7 @@ nav {
 }
 .category {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     gap: 10px;
     padding: 5px 5px;
@@ -511,6 +512,25 @@ footer {
     .all-position-btn {
         text-align: center;
     }
+    .game-category-container {
+        padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 5px;
+    }
+    .category > img {
+        width: 25px;
+        height: 25px;
+    }
+    .category > p {
+        color: #0B0223;
+        font-size: .7rem;
+        font-weight: 600;
+    }
+    .list-font {
+        font-size: .8rem;
+        font-weight: 600;
+    }
 }
 
 /* medium device section */
@@ -546,5 +566,11 @@ footer {
     .careers-content p,
     .all-position-btn {
         text-align: center;
+    }
+    .game-category-container {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
     }
 }
